@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditEventActivity">
+
+    <TextView
+        android:id="@+id/home_tv_title3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/cyan_500"
+        android:textSize="64sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edev_et_date"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_date"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/crev_date"
+        android:inputType="date"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edev_et_org" />
+
+    <EditText
+        android:id="@+id/edev_et_org"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_org"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:fontFamily="@font/nunito"
+        android:hint="@string/crev_organizer"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edev_et_judul" />
+
+    <EditText
+        android:id="@+id/edev_et_judul"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_judul"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:fontFamily="@font/nunito"
+        android:hint="@string/crev_title"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_tv_title3" />
+
+    <EditText
+        android:id="@+id/edev_cap"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_capacity"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/crev_cap"
+        android:inputType="number"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edev_et_date" />
+
+
+    <Button
+        android:id="@+id/edev_btn_daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/edev_btn_submit"
+        app:layout_constraintEnd_toStartOf="@+id/edev_btn_hps"
+        app:layout_constraintStart_toEndOf="@+id/edev_btn_gbr"
+        app:layout_constraintTop_toTopOf="@+id/edev_btn_gbr" />
+
+    <ScrollView
+        android:id="@+id/scrolView"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edev_cap">
+
+
+        <EditText
+            android:id="@+id/edev_et_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/crev_desc"
+            android:inputType="textMultiLine"
+            android:paddingStart="12dp"
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/edev_btn_gbr"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_img"
+        android:textColor="#424141"
+        app:layout_constraintStart_toStartOf="@+id/scrolView"
+        app:layout_constraintTop_toBottomOf="@+id/scrolView" />
+
+    <Button
+        android:id="@+id/edev_btn_hps"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_del"
+        app:layout_constraintEnd_toEndOf="@+id/scrolView"
+        app:layout_constraintTop_toTopOf="@+id/edev_btn_gbr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

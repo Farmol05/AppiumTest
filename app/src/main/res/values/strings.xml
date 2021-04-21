@@ -1,0 +1,45 @@
+<resources>
+    <!--  Auth  -->
+    <string name="app_name">e-event</string>
+    <string name="masuk">Masuk</string>
+    <string name="daftar">Daftar</string>
+    <string name="blm_punya_akun">Belum punya akun?</string>
+    <string name="sdh_punya_akun">Sudah punya akun?</string>
+    <string name="input_nama">Nama Lengkap</string>
+    <string name="input_hp">Nomor HP</string>
+    <string name="input_email">Email</string>
+    <string name="input_pwd">Kata sandi</string>
+    <string name="input_conf_pwd">Konfirmasi kata sandi</string>
+
+    <!--  Event  -->
+    <string name="title_activity_event">Buat Event</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_about">About</string>
+    <string name="menu_home">Beranda</string>
+    <string name="menu_gallery">Event Anda</string>
+    <string name="menu_exit">Keluar</string>
+
+    <!--  Create Event  -->
+    <string name="crev">Membuat Event</string>
+    <string name="crev_title">Judul Event</string>
+    <string name="crev_organizer">Penyelenggara</string>
+    <string name="crev_date">Tanggal di selenggarakan</string>
+    <string name="crev_cap">Jumlah Tiket</string>
+    <string name="crev_desc">Deskripsi</string>
+    <string name="crev_btn_submit">Tambahkan</string>
+    <string name="upload_gambar">Upload Poster</string>
+
+    <!--  Edit Event  -->
+    <string name="edev">Edit Event</string>
+    <string name="hapus">Hapus Event</string>
+    <string name="edev_btn_submit">Perbarui</string>
+
+    <!--  Detail Event  -->
+    <string name="det_book">Dapatkan Tiket</string>
+
+    <!--  Bookinn  -->
+    <string name="downloadTicket">Unduh Tiket</string>
+
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.e_event"
+    >
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tiktok"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tiktok"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Eevent">
+        <activity
+            android:name=".TicketActivity"
+            android:parentActivityName=".EventActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".EventDetailActivity"
+            android:parentActivityName=".EventActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".EditEventActivity"
+            android:label="@string/edev"
+            android:parentActivityName=".EventActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".CreateEventActivity"
+            android:label="@string/title_activity_event"
+            android:parentActivityName=".EventActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".EventActivity"
+            android:label="@string/title_activity_event"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Eevent.NoActionBar" />
+
+        <activity android:name=".HomeActivity" />
+
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
